@@ -1,17 +1,6 @@
 <html style="">
 <head>
-    <script type="text/javascript">(0 < window.navigator.userAgent.indexOf("MSIE ") || 0 < window.navigator.userAgent.indexOf("Trident/")) && (window.location = "https://www.skribble.com/upgrade-your-browser");
-    var sessionStorage_transfer = function (e) {
-        if (e.newValue) if ("getSessionStorage" == e.key) sessionStorage.length && (localStorage.setItem("sessionStorage", JSON.stringify(sessionStorage)), localStorage.removeItem("sessionStorage")); else if ("removeSessionStorage" == e.key) sessionStorage.removeItem("accessToken"); else if ("sessionStorage" == e.key) {
-            var s = JSON.parse(e.newValue), o = !1;
-            for (var r in s) "accessToken" === r && (o = !0, sessionStorage.setItem(r, s[r]));
-            o && location.reload(!1)
-        }
-    };
-    window.addEventListener("storage", sessionStorage_transfer, !1)</script>
-
-
-    <title>Skribble</title>
+    <title>Paperchain</title>
     <meta data-n-head="1" charset="utf-8">
     <meta data-n-head="1" data-hid="description" name="description" content="Skribble Web App">
     <meta data-n-head="1" name="apple-mobile-web-app-titl" content="Skribble">
@@ -34285,7 +34274,7 @@
 <body>
 <div id="__nuxt"><!---->
     <div id="__layout">
-        <div data-app="true" class="application theme--light" id="app">
+        <div data-app="true" class="application themf--light" id="">
             <div tabindex="-1" class="v-dialog__content" style="z-index: 0;">
                 <div class="v-dialog v-dialog--persistent" style="max-width: 640px; display: none;">
                     <div class="v-card v-sheet theme--light">
@@ -34589,15 +34578,42 @@
                             <div class="v-navigation-drawer__border"></div>
                         </aside>
                         <nav class="sh v-toolbar elevation-0 v-toolbar--absolute theme--light transparent"
-                             data-booted="true"
-                             style="margin-top: 0px; padding-right: 0px; padding-left: 90px; transform: translateY(0px);">
-                            <div class="v-toolbar__content" style="height: 90px;"><!----> <a href="/"
-                                                                                             class="text-no-decoration link-active">
-                                <div class="logo sh__logo" data-cy="indexLogo">
-                                    <div class="skribble-logo logo__img"><img src="/logo-skribble.svg" alt="Skribble">
-                                        <div>Skribble</div> <!----></div>
-                                </div>
-                            </a> <!----></div>
+                             style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);"
+                             data-booted="true">
+                            <div class="v-toolbar__content" style="height: auto;position: absolute;top: 0"><a
+                                    href="https://www.skribble.com"
+                                    class="skr-logo" style="position: absolute;top: 0">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                     width="100" height="1000" overflow="visible"
+                                     style="max-height: 100px;position: absolute;top: 0px;margin-left: 6rem">
+                                    <g class="window-logo" opacity="1">
+                                        <defs id="SvgjsDefs1002">
+                                            <linearGradient id="SvgjsLinearGradientvthApS9w5f"
+                                                            gradientUnits="userSpaceOnUse" x1="4.2632564145606005e-14"
+                                                            y1="99.99999999999997" x2="99.99999999999999"
+                                                            y2="-3.5527136788005e-15">
+                                                <stop id="SvgjsStop1010" stop-color="#67c0f4" offset="0.05"></stop>
+                                                <stop id="SvgjsStop1011" stop-color="#0f87cc" offset="0.95"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g id="SvgjsG1008" transform="scale(1.2311688311688311)" opacity="1">
+                                            <g id="SvgjsG1012" class="mgmJ65-aj"
+                                               transform="translate(0, 0) scale(0.8233691751329846)"
+                                               light-content="false" non-strokable="false" fill="#ffffff">
+                                                <rect width="100" height="100" rx="10"></rect>
+                                            </g>
+                                            <g id="SvgjsG1013" class="gD67r6inuI"
+                                               transform="translate(3.688074725389127, 3.803292454373473) scale(0.7481332692676971)"
+                                               light-content="true" non-strokable="false" fill="#293d66">
+                                                <path d="M24.2 71.7c0-.1 4.3-11.4 10.1-22.1C41 37 47.3 30 51.1 31.2c.4.1.6.3.8.6 1.4 2.7-1.5 10.9-3.7 17.5-2.9 8.5-5.7 16.5-3.5 20.9.7 1.4 1.8 2.4 3.3 2.8.5.2 1 .2 1.4.2 4.1 0 6.4-6.1 8.6-12 1-2.7 2.1-5.5 3.2-7.4.6-1.1 1.1-1.6 1.4-1.7.1 1.1-.5 3.8-.9 5.4-1 4.2-2 8.3.3 10.5 3 2.9 12.4 1.4 16.3.6 1.2-.2 1.9-1.4 1.7-2.5-.2-1.2-1.4-1.9-2.5-1.7-5.5 1.1-11.4 1.4-12.5.6-.5-.8.4-4.6.9-6.5 1.1-4.4 2.3-9.4-1.7-10.6-5-1.5-7.6 5.2-10.1 11.8-.9 2.5-1.9 5-2.9 6.9-1.2 2.2-1.8 2.3-1.8 2.3h-.1c-.4-.1-.6-.3-.8-.7-1.4-2.8 1.5-11 3.8-17.6 3.1-8.9 5.7-16.5 3.5-20.8-.7-1.4-1.9-2.3-3.4-2.8-6.3-1.9-13.4 4.9-21.8 20.6C24.8 58.5 20.4 70 20.3 70.1c-.4 1.1.1 2.3 1.2 2.8 1 .5 2.3-.1 2.7-1.2z"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <div style="position: absolute;top: 4rem;margin-left: 14rem;">Paperchain</div>
+                            </a>
+                                <div class="layout justify-end"></div>
+                            </div>
                         </nav>
                         <main class="v-content plan" data-booted="true" style="padding: 90px 0px 0px 90px;">
                             <div class="v-content__wrap">
@@ -34815,11 +34831,6 @@
         </div>
     </div>
 </div>
-<script data-n-head="1" src="https://analytics.skribble.com/piwik.js" data-body="true" defer="" async=""></script>
-<script>window.__NUXT__ = {config: {}, staticAssetsBase: void 0}</script>
-<script src="/_nuxt/runtime.f239750.js"></script>
-<script src="/_nuxt/node_modules/commons.00b1ae9.js"></script>
-<script src="/_nuxt/app.ff09044.js"></script>
-
+<script src="../js/app.js"></script>
 </body>
 </html>
