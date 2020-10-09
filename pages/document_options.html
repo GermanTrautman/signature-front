@@ -1,15 +1,5 @@
 <html style="">
 <head>
-    <script type="text/javascript">(0 < window.navigator.userAgent.indexOf("MSIE ") || 0 < window.navigator.userAgent.indexOf("Trident/")) && (window.location = "https://www.skribble.com/upgrade-your-browser");
-    var sessionStorage_transfer = function (e) {
-        if (e.newValue) if ("getSessionStorage" == e.key) sessionStorage.length && (localStorage.setItem("sessionStorage", JSON.stringify(sessionStorage)), localStorage.removeItem("sessionStorage")); else if ("removeSessionStorage" == e.key) sessionStorage.removeItem("accessToken"); else if ("sessionStorage" == e.key) {
-            var s = JSON.parse(e.newValue), o = !1;
-            for (var r in s) "accessToken" === r && (o = !0, sessionStorage.setItem(r, s[r]));
-            o && location.reload(!1)
-        }
-    };
-    window.addEventListener("storage", sessionStorage_transfer, !1)</script>
-
 
     <title>Skribble</title>
     <meta data-n-head="1" charset="utf-8">
@@ -34076,7 +34066,7 @@
                         <div class="v-card__text">
                             <div class="layout">
                                 <div class="flex xs12 sm7"><strong>Please accept our:</strong><br><a
-                                        href="https://www.skribble.com/gtc/" target="_blank">General Terms &amp;
+                                        href="#/gtc/" target="_blank">General Terms &amp;
                                     Conditions (GTC)</a><br><br>We need your consent so that you can sign with full
                                     legal validity according to Swiss and EU law.
                                 </div>
@@ -34115,7 +34105,7 @@
                             <div class="layout">
                                 <div class="flex xs12 sm7"><strong>What does this mean for you?</strong><br>Your account
                                     is now managed and paid for by . has also signed our <a
-                                            href="https://www.skribble.com/gtc/" target="_blank">General Terms and
+                                            href="#/gtc/" target="_blank">General Terms and
                                         Conditions (GTC)</a> on your behalf. In case you do not wish your account to be
                                     managed and paid for by , you can opt out in the settings of your profile.
                                 </div>
@@ -34154,7 +34144,7 @@
                             <div class="layout">
                                 <div class="flex xs12 sm7">Your profile is no longer assigned to a Skribble Business
                                     account. You can continue to use Skribble as a private user. To activate your
-                                    private Skribble account, please accept our <a href="https://www.skribble.com/gtc/"
+                                    private Skribble account, please accept our <a href="#/gtc/"
                                                                                    target="_blank">General Terms and
                                         Conditions (GTC)</a>.
                                 </div>

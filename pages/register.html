@@ -1,5 +1,5 @@
-<html ng-app="myApp">
-<head>
+<html>
+<head ng-app="myApp">
     <title>Paperchain</title>
     <meta data-n-head="1" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../assets/main.css">
@@ -8,7 +8,7 @@
 <body ng-controller="mainController">
 <div id="__nuxt"><!---->
     <div id="__layout">
-        <div data-app="true" class="application theme--light" id="app">
+        <div data-app="true" class="application theme--light" id="">
             <div tabindex="-1" class="v-dialog__content" style="z-index: 0;">
                 <div class="v-dialog v-dialog--persistent" style="max-width: 640px; display: none;">
                     <div class="v-card v-sheet theme--light">
@@ -184,165 +184,140 @@
                                                         <div class="heading_container"><!----> <!----></div>
                                                         <div class="ml-4"></div>
                                                     </header> <!---->
-                                                    <header class="pb-4 | heading login__heading">
-                                                        <div class="heading_container"><h1 data-cy="title"
-                                                                                           class="heading__title">
-                                                            Ingresa a Paperchain
+                                                    <header data-v-90968160="" class="pb-4 | heading signup__heading">
+                                                        <div data-v-90968160="" class="heading_container"><h1
+                                                                data-v-90968160="" data-cy="title"
+                                                                class="heading__title">
+                                                            Queres firmar fácil? Create una cuenta!
                                                         </h1>
-                                                            <div data-cy="subtitle" class="heading__subtitle">
-                                                                Todavía no tienes cuenta?
-                                                                <a href="/signup" class="link fwn"
-                                                                   data-cy="signupButton">
-                                                                    Crear
+                                                            <div data-v-90968160="" data-cy="subtitle"
+                                                                 class="heading__subtitle">
+                                                                Ya tienes cuenta?
+                                                                <a data-v-90968160="" href="/login" class="link fwn">
+                                                                    Ingresar
                                                                 </a></div>
                                                         </div>
                                                     </header>
-                                                    <form novalidate="novalidate" class="v-form" action="login_step1.html">
-                                                        <div class="v-window">
-                                                            <div class="v-window__container" style="">
-                                                                <div class="v-window-item" style="display: none;">
-                                                                    <div class="v-input mb-4 v-text-field v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light">
-                                                                        <div class="v-input__control">
-                                                                            <div class="v-input__slot">
-                                                                                <div class="v-text-field__slot"><label
-                                                                                        aria-hidden="true"
-                                                                                        class="v-label v-label--active theme--light"
-                                                                                        style="left: 0px; right: auto; position: absolute;">E-mail</label><input
-                                                                                        aria-label="E-mail"
-                                                                                        data-cy="email"
-                                                                                        autofocus="autofocus"
-                                                                                        type="text"
-                                                                                        autocomplete="email"></div>
-                                                                            </div>
+                                                    <form data-v-90968160="" novalidate="novalidate"
+                                                          class="v-form v-form-skr-flex">
+                                                        <div data-v-90968160=""
+                                                             class="v-input v-text-field v-input v-input--is-dirty theme--light">
+                                                            <div class="v-input__control">
+                                                                <div class="v-input__slot">
+                                                                    <div class="v-text-field__slot"><label
+                                                                            aria-hidden="true"
+                                                                            class="v-label v-label--active theme--light"
+                                                                            style="left: 0px; right: auto; position: absolute;">E-mail</label><input
+                                                                            aria-label="E-mail" name="email" type="text"
+                                                                            autocomplete="email"></div>
+                                                                    <div class="v-input__append-inner">
+                                                                        <div class="v-input__icon v-input__icon--append">
+                                                                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" enable-background="new 0 0 24 24" xml:space="preserve" aria-hidden="true" class="v-icon v-icon--is-component theme--light"><path d="M17.7,14.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l2,2c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L17.7,14.3z
+	 M6.3,14.3l-2,2c-0.4,0.4-0.4,1,0,1.4C4.5,17.9,4.7,18,5,18s0.5-0.1,0.7-0.3l2-2c0.4-0.4,0.4-1,0-1.4S6.7,13.9,6.3,14.3z M18.3,6.3
+	L12,12.6L5.7,6.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7c0.4-0.4,0.4-1,0-1.4
+	S18.7,5.9,18.3,6.3z M21,2H3C1.3,2,0,3.3,0,5v14c0,1.7,1.3,3,3,3h18c1.7,0,3-1.3,3-3V5C24,3.3,22.7,2,21,2z M22,19c0,0.6-0.4,1-1,1
+	H3c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1V19z"></path></svg>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="layout" style="padding-bottom: 32px;">
-                                                                        <button type="submit"
-                                                                                class="ma-0 v-btn v-btn--block v-btn--large theme--light primary"
-                                                                                data-cy="loginNext">
-                                                                            <div class="v-btn__content">
-                                                                                Next
-                                                                            </div>
-                                                                        </button>
                                                                     </div>
                                                                 </div>
-                                                                <div class="v-window-item" style="">
-                                                                    <div class="v-input v-text-field v-input--hide-details theme--light">
-                                                                        <div class="v-input__control">
-                                                                            <div class="v-input__slot">
-                                                                                <div class="v-text-field__slot"><label
-                                                                                        aria-hidden="true"
-                                                                                        class="v-label theme--light"
-                                                                                        style="left: 0px; right: auto; position: absolute;">Contraseña</label><input
-                                                                                        aria-label="Password"
-                                                                                        data-cy="password"
-                                                                                        type="password"
-                                                                                        autocomplete="current-password">
-                                                                                </div>
-                                                                                <div class="v-input__append-inner">
-                                                                                    <div class="v-input__icon v-input__icon--append">
-                                                                                        <svg height="24"
-                                                                                             fill="currentColor"
-                                                                                             width="24"
-                                                                                             xmlns="http://www.w3.org/2000/svg"
-                                                                                             aria-hidden="true"
-                                                                                             class="v-icon v-icon--link v-icon--is-component theme--light">
-                                                                                            <path d="M21.37,11.5a16.75,16.75,0,0,0-3.43-4l2.42-2.41a1,1,0,0,0-1.42-1.42L16.29,6.3A8.42,8.42,0,0,0,12,5.05c-5.62,0-9.22,6.19-9.37,6.45a1,1,0,0,0,0,1,16.75,16.75,0,0,0,3.43,4L3.64,18.94a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L7.71,17.7A8.42,8.42,0,0,0,12,19c5.62,0,9.22-6.19,9.37-6.45A1,1,0,0,0,21.37,11.5ZM7.48,15.11A15.4,15.4,0,0,1,4.68,12C5.59,10.65,8.35,7.05,12,7.05a6.31,6.31,0,0,1,2.82.72L13.69,8.9A3.5,3.5,0,0,0,12,8.45,3.55,3.55,0,0,0,8.45,12a3.5,3.5,0,0,0,.45,1.69Zm6.06-3.23s0,.08,0,.12A1.56,1.56,0,0,1,12,13.55h-.12Zm-3.08.24s0-.08,0-.12A1.56,1.56,0,0,1,12,10.45h.12ZM12,17a6.31,6.31,0,0,1-2.82-.72l1.13-1.13a3.5,3.5,0,0,0,1.69.45A3.55,3.55,0,0,0,15.55,12a3.5,3.5,0,0,0-.45-1.69l1.42-1.42A15.4,15.4,0,0,1,19.32,12C18.41,13.35,15.65,17,12,17Z"></path>
-                                                                                        </svg>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="layout my-3 align-center justify-space-between">
-                                                                        <div class="flex">
-                                                                            <div class="v-input v-input--selection-controls v-input--checkbox v-input--hide-details theme--light">
-                                                                                <div class="v-input__control">
-                                                                                    <div class="v-input__slot">
-                                                                                        <div class="v-input--selection-controls__input">
-                                                                                            <input aria-label="Remember me"
-                                                                                                   aria-checked="false"
-                                                                                                   role="checkbox"
-                                                                                                   type="checkbox"
-                                                                                                   value="">
-                                                                                            <div class="v-input--selection-controls__ripple"></div>
-                                                                                            <svg fill="currentColor"
-                                                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                                                                 viewBox="0 0 24 24"
-                                                                                                 width="24" height="24"
-                                                                                                 enable-background="new 0 0 24 24"
-                                                                                                 xml:space="preserve"
-                                                                                                 aria-hidden="true"
-                                                                                                 class="v-icon v-icon--is-component theme--light"><path d="M21,0H3C1.3,0,0,1.3,0,3v18c0,1.7,1.3,3,3,3h18c1.7,0,3-1.3,3-3V3C24,1.3,22.7,0,21,0z M20,20H4V4h16V20z"></path></svg>
-                                                                                        </div>
-                                                                                        <label aria-hidden="true"
-                                                                                               class="v-label theme--light"
-                                                                                               style="left: 0px; right: auto; position: relative;">Recordarme</label>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="flex text-xs-right"><a
-                                                                                href="/password-reset"
-                                                                                class="link is-regular">Recuperar
-                                                                            conteseña</a></div>
-                                                                    </div>
-                                                                    <div class="layout column reverse">
-                                                                        <div class="flex xs12 md6">
-                                                                            <button type="button"
-                                                                                    onclick="window.location.href='/skibble/index.html'"
-                                                                                    class="ma-0 v-btn v-btn--block v-btn--large v-btn--outline v-btn--depress   ed theme--light primary--text mt-3">
-                                                                                <div class="v-btn__content">Volver</div>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="flex text-sm-right xs12 md6">
-                                                                            <a type="button" href="#all"
-                                                                                    class="ma-0 v-btn v-btn--block v-btn--large theme--light info"
-                                                                                    data-cy="loginButton">
-                                                                                <div class="v-btn__content">Ingresar
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
+                                                                <div class="v-text-field__details">
+                                                                    <div class="v-messages theme--light">
+                                                                        <div class="v-messages__wrapper"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div data-v-90968160=""
+                                                             class="v-input v-input--selection-controls v-input--checkbox v-input--is-label-active v-input--is-dirty theme--light">
+                                                            <div class="v-input__control">
+                                                                <div class="v-input__slot">
+                                                                    <div class="v-input--selection-controls__input">
+                                                                        <input aria-checked="true" role="checkbox"
+                                                                               type="checkbox" value="">
+                                                                        <div class="v-input--selection-controls__ripple accent--text"></div>
+                                                                        <svg fill="currentColor"
+                                                                             xmlns="http://www.w3.org/2000/svg"
+                                                                             viewBox="0 0 24 24" width="24" height="24"
+                                                                             enable-background="new 0 0 24 24"
+                                                                             xml:space="preserve" aria-hidden="true"
+                                                                             class="v-icon v-icon--is-component theme--light accent--text"><path d="M21,0H3C1.3,0,0,1.3,0,3v18c0,1.7,1.3,3,3,3h18c1.7,0,3-1.3,3-3V3C24,1.3,22.7,0,21,0z M18.1,9.5l-6.6,7
+			c-0.3,0.3-0.7,0.5-1.1,0.5h0c-0.4,0-0.8-0.2-1.1-0.5L5.9,13c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0l2.3,2.4l5.5-5.9
+			c0.6-0.6,1.5-0.6,2.1-0.1C18.6,8,18.7,8.9,18.1,9.5z"></path></svg>
+                                                                    </div>
+                                                                    <label aria-hidden="true"
+                                                                           class="v-label theme--light"
+                                                                           style="left: 0px; right: auto; position: relative;"><span
+                                                                            data-v-90968160="">Acepto los <a
+                                                                            href=""
+                                                                            target="_blank">Terminos de Uso</a></span></label>
+                                                                </div>
+                                                                <div class="v-messages theme--light">
+                                                                    <div class="v-messages__wrapper"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button data-v-90968160="" type="submit"
+                                                                class="v-btn v-btn--block v-btn--large theme--light info">
+                                                            <div class="v-btn__content">Create account</div>
+                                                        </button>
                                                     </form>
-                                                    <div class="alternative-login mt-4">
-                                                        <div class="alternative-login__title">O ingresa con</div>
+                                                    <div data-v-90968160="" class="alternative-login mt-4">
+                                                        <div class="alternative-login__title">or use</div>
                                                         <div class="alternative-login__services">
                                                             <div class="alternative-login__service"><a
                                                                     href="/ph/oauth2/login?via=trustid"
                                                                     class="alternative-login__trustid elevation-0 v-btn v-btn--block v-btn--outline v-btn--depressed theme--light">
                                                                 <div class="v-btn__content">
-                                                                    <img src="https://www.google.com.ar/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"/>
-
+                                                                    <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" enable-background="new 0 0 24 24" xml:space="preserve" aria-hidden="true" class="v-icon v-icon--left v-icon--is-component theme--light"><rect id="Background" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="24" height="24"></rect> <path
+                                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                                            fill="#000000" d="M0,12v12h24V12H0z M10.1,19.1h-1v-3.6h1V19.1z M9.6,15.2C9.3,15.2,9,15,9,14.7
+			s0.2-0.5,0.6-0.5c0.3,0,0.6,0.2,0.6,0.5S9.9,15.2,9.6,15.2z M12.4,19.1h-1.3v-4.8h1.3c1.6,0,2.6,0.9,2.6,2.4
+			C14.9,18.3,14,19.1,12.4,19.1z"></path> <path fill-rule="evenodd" clip-rule="evenodd"
+                                                         d="M12.4,15.2h-0.3v3.1h0.3c0.9,0,1.5-0.5,1.5-1.6C13.9,15.7,13.3,15.2,12.4,15.2z"></path> <path
+                                                                            fill-rule="evenodd" clip-rule="evenodd"
+                                                                            fill="#FF0000" d="M0,0v12h24V0H0z M6.7,7H5.6v1.3C5.6,8.9,5.8,9,6.2,9
+		c0.1,0,0.1,0,0.2,0v0.9c0,0-0.2,0-0.4,0C5,9.9,4.6,9.4,4.6,8.4V8.1h0V7H3.5V6h1.1V4.9h1V6h1.1V7z M9.4,6.9c-0.8,0-1,0.5-1,1.2v1.7
+		h-1V6h1v0.6c0.2-0.4,0.6-0.7,1.1-0.7V6.9z M13.4,9.9h-1V9.4c-0.2,0.3-0.5,0.6-1,0.6C10.2,10,10,9.1,10,8.2V6h1v2.4
+		c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V6h1V9.9z M15.4,10c-0.8,0-1.2-0.4-1.5-0.7l0.6-0.5C14.7,9,15,9.2,15.4,9.2
+		c0.3,0,0.5-0.1,0.5-0.3c0-0.6-1.8-0.4-1.8-1.7c0-0.7,0.6-1.2,1.4-1.2c0.7,0,1.1,0.4,1.3,0.7l-0.7,0.5C16,7,15.8,6.7,15.4,6.7
+		C15.2,6.7,15,6.8,15,7c0,0.6,1.8,0.3,1.8,1.7C16.9,9.5,16.2,10,15.4,10z M20.5,7.1h-1.1v1.1h-1V7.1h-1.1V6h1.1V4.9h1V6h1.1V7.1z"></path></svg>
+                                                                    trustID
                                                                 </div>
                                                             </a></div>
                                                             <div class="alternative-login__service">
                                                                 <button disabled="disabled" type="button"
                                                                         class="v-btn v-btn--block v-btn--disabled theme--light">
                                                                     <div class="v-btn__content">
-                                                                        <img src="https://cdn.icon-icons.com/icons2/1269/PNG/512/1497553311-103_84832.png"/>
-
+                                                                        <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" enable-background="new 0 0 24 24" xml:space="preserve" aria-hidden="true" class="v-icon v-icon--left v-icon--is-component theme--light"><path d="M0,9.6v4.8h4.8V9.6H0z M0,24h4.8v-4.8H0V24z M4.8,14.4v4.8h4.8v-4.8H4.8z M19.2,0v4.8h-4.8v4.8h4.8v4.8h-4.8v4.8H9.6V24H24
+	V0H19.2z M9.6,4.8h4.8V0H0v4.8h4.8v4.8h4.8V4.8z"></path></svg>
+                                                                        eID+
                                                                     </div>
                                                                 </button>
                                                                 <div class="alternative-login__small mt-2">
-                                                                    Proximamente
+                                                                    Coming soon
                                                                 </div>
                                                             </div>
                                                             <div class="alternative-login__service">
                                                                 <button disabled="disabled" type="button"
                                                                         class="v-btn v-btn--block v-btn--disabled theme--light">
                                                                     <div class="v-btn__content">
-                                                                        <img src="https://www.afip.gob.ar/frameworkAFIP/v1/img/logo_afip.png"/>
+                                                                        <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" enable-background="new 0 0 24 24" xml:space="preserve" aria-hidden="true" class="v-icon v-icon--left v-icon--is-component theme--light"><path fill-rule="evenodd" clip-rule="evenodd" d="M22,0H2C0.9,0,0,0.9,0,2v20c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V2
+	C24,0.9,23.1,0,22,0z M6,14c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C8,13.1,7.1,14,6,14z M12,20c-1.1,0-2-0.9-2-2
+	c0-1.1,0.9-2,2-2s2,0.9,2,2C14,19.1,13.1,20,12,20z M12,14c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C14,13.1,13.1,14,12,14z
+	 M12,8c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C14,7.1,13.1,8,12,8z M18,14c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2
+	C20,13.1,19.1,14,18,14z"></path></svg>
+                                                                        SwissID
                                                                     </div>
                                                                 </button>
                                                                 <div class="alternative-login__small mt-2">
-                                                                    Proximamente
+                                                                    Coming soon
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div data-v-90968160="" class="signup__pp">I have taken note of the
+                                                        <a class="link fwn" href="#/privacy"
+                                                           target="_blank">privacy policy</a>.
                                                     </div>
                                                 </div>
                                             </div>
@@ -351,9 +326,9 @@
                                                     <div class="v-responsive v-image"
                                                          style="max-width: 100%; width: 520px;">
                                                         <div class="v-responsive__sizer"
-                                                             style="padding-bottom: 112.5%;"></div>
+                                                             style="padding-bottom: 96.9231%;"></div>
                                                         <div class="v-image__image v-image__image--contain"
-                                                             style="background-image: url(&quot;https://my.skribble.com/login-visual@2x.jpg&quot;); background-position: center center;"></div>
+                                                             style="background-image: url(&quot;https://my.skribble.com/register-visual@2x.jpg&quot;); background-position: center center;"></div>
                                                         <div class="v-responsive__content"></div>
                                                     </div>
                                                 </div>
@@ -413,8 +388,6 @@
     </div>
 </div>
 <script>window.__NUXT__ = {config: {}, staticAssetsBase: void 0}</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
 <script src="../js/app.js"></script>
 
 </body>
